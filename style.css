@@ -2,7 +2,7 @@ html,body{
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
@@ -24,6 +24,7 @@ img{
     width: 100%;
     height: auto;
     max-width: "480px";
+    max-height: "720px";
 }
 
 .nav{
@@ -87,7 +88,7 @@ img{
     padding: 0;
     text-align: left;
     font-weight: 300;
-    font-size: 3.2vw;
+    font-size: 3.2rem;
 }
 
 .section-about .p-about{
@@ -95,7 +96,7 @@ img{
     margin: 0;
     padding: 0;
     text-align: right;
-    font-size: 2.5vw;
+    font-size: 2.5rem;
 }
 
 .section-projects{
@@ -106,7 +107,7 @@ img{
     margin: 0;
     padding: 0;
     font-weight: 300;
-    font-size: 2.5vw;
+    font-size: 2.5rem;
 }
 
 .section-project{
@@ -142,6 +143,7 @@ img{
 }
 
 .section-contact{
+    height: fit-content;
     width: 100%;
     text-align: right;
 }
@@ -150,5 +152,40 @@ img{
     margin: 0;
     padding: 0;
     font-weight: 200;
-    font-size: 2.5vw;
+    font-size: 2.5rem;
+}
+
+.section-contact .form-contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contact .input-form{
+    margin: 2rem;
+    padding: .25rem;
+    height: 5rem;
+    font-size: 2rem;
+    border-radius: .375rem;
+    border: #00000044 1px solid;
+}
+
+.form-contact .textarea-form{
+    resize: none;
+    margin: 2rem;
+    padding: .25rem;
+    height: 15rem;
+    font-size: 2rem;
+    border-radius: .375rem;
+    border: #00000044 1px solid;
+}
+
+.form-contact .button-form{
+    color: #00000077;
+    text-align: left;
+    margin: 2rem;
+    padding: .25rem;
+    height: 5rem;
+    font-size: 2rem;
+    border: 0;
+    border-radius: .375rem;
 }
