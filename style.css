@@ -3,6 +3,9 @@
     --h2-font-size: 4.5rem;
     --h3-font-size: 2.5rem;
     --neutral-font-size: 1.5rem;
+
+    --content-width: 70%;
+    --content-padding: 15%;
 }
 
 html,body{
@@ -38,6 +41,8 @@ img{
     :root{
         --h1-font-size: 4.2rem;
         --h2-font-size: 3.8rem;
+        --h3-font-size: 1.5rem;
+        --neutral-font-size: 1.2rem;
     }
 }
 
@@ -60,6 +65,11 @@ img{
         --h1-font-size: 3.2rem;
         --h2-font-size: 2.8rem;
     }
+
+    .section-projects .section-project{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 926px) {
@@ -69,10 +79,17 @@ img{
     }
 }
 
-@media screen and (max-width: 926px) {
+@media screen and (max-width: 650px) {
     :root{
-        --h1-font-size: 2.8rem;
-        --h2-font-size: 2.2rem;
+        --content-width: 90%;
+        --content-padding: 5%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    :root{
+        --h1-font-size: 2.2rem;
+        --h2-font-size: 1.8rem;
     }
 }
 
@@ -103,11 +120,8 @@ img{
 
 .div-content{
     height: fit-content;
-    width: fit-content;
-    position: absolute;
-    top: 0;
-    left: 15%;
-    right: 15%;
+    width: var(--content-width);
+    padding: 0 var(--content-padding);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -167,7 +181,7 @@ img{
 }
 
 .section-project .p-description{
-    font-size: 1.8rem;
+    font-size: var(--neutral-font-size);
 }
 
 .div-description .div-utility{
@@ -194,7 +208,7 @@ img{
 
 .section-contact .p-contact{
     margin: 2rem;
-    font-size: 1.8rem;
+    font-size: var(--neutral-font-size);
     font-weight: 100;
     text-align: center;
 }
@@ -218,7 +232,7 @@ img{
     margin: 2rem;
     padding: .25rem;
     height: 5rem;
-    font-size: 2rem;
+    font-size: var(--neutral-font-size);
     border-radius: .375rem;
     border: #00000044 1px solid;
 }
@@ -228,7 +242,7 @@ img{
     margin: 2rem;
     padding: .25rem;
     height: 15rem;
-    font-size: 2rem;
+    font-size: var(--neutral-font-size);
     border-radius: .375rem;
     border: #00000044 1px solid;
 }
@@ -239,7 +253,7 @@ img{
     margin: 2rem;
     padding: .25rem;
     height: 5rem;
-    font-size: 2rem;
+    font-size: var(--neutral-font-size);
     border: 0;
     border-radius: .375rem;
 }
