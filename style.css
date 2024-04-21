@@ -33,8 +33,8 @@ hr{
 img{
     width: 100%;
     height: auto;
-    max-width: "480px";
-    max-height: "720px";
+    max-width: 480px;
+    max-height: 720px;
 }
 
 @media screen and (max-width: 1366px) {
@@ -66,9 +66,23 @@ img{
         --h2-font-size: 2.8rem;
     }
 
+    img{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
     .section-projects .section-project{
         display: flex;
         flex-direction: column;
+    }
+
+    .div-flexed{
+        flex-direction: column;
+    }
+
+    .div-flexed .div-language{
+        width: 100%;
     }
 }
 
@@ -99,6 +113,8 @@ img{
     background-color: white;
     border-bottom: #cfcfcf solid 1px;
     box-shadow: 0 1px 0 #ebebeb;
+    display: flex;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -115,6 +131,16 @@ img{
 }
 
 .nav .a-name:hover{
+    font-weight: 400;
+}
+
+.nav .a-cv{
+    padding: .5rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav .a-cv:hover{
     font-weight: 400;
 }
 
@@ -191,6 +217,33 @@ img{
 .div-utility .h3-project{
     margin: 0;
     padding: 0;
+}
+
+.div-language{
+    width: 50%;
+}
+
+.div-flexed{
+    width: 100%;
+    display: flex;
+}
+
+.div-flexed .a-repo{
+    height: fit-content;
+    color: inherit;
+    text-decoration: none;
+    font-size: var(--h3-font-size);
+    margin: 5% 0 0 10%;
+    padding: .35rem;
+    border: 1px solid black;
+    border-radius: 1.25rem;
+    transition: all .2s ease-in;
+}
+
+.div-flexed .a-repo:hover{
+    color: white;
+    background-color: black;
+    font-weight: 400;
 }
 
 .section-contact{
